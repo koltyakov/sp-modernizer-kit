@@ -1,0 +1,43 @@
+{
+  "name": "sp-modernizer-kit",
+  "version": "1.0.0",
+  "description": "SharePoint Online classic sites modernizer kit",
+  "private": true,
+  "scripts": {
+    "build": "gulp build --prod --webpack",
+    "watch": "gulp watch",
+    "config": "gulp config --init",
+    "publish": "gulp push --diff",
+    "analyze": "gulp analyze"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koltyakov/sp-modernizer-kit.git"
+  },
+  "keywords": [
+    "SharePoint Online",
+    "SPO", "Modernizer"
+  ],
+  "author": "Andrew Koltyakov <andrew.koltyakov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koltyakov/sp-modernizer-kit/issues"
+  },
+  "homepage": "https://github.com/koltyakov/sp-modernizer-kit#readme",
+  "dependencies": {
+    "@pnp/pnpjs": "^1.1.2",
+    "@uifabric/icons": "^6.0.2",
+    "office-ui-fabric-react": "^6.38.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "store": "^2.0.12"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "@types/sharepoint": "^2016.1.1",
+    "eslint-config-standard": "^11.0.0",
+    "sp-build-tasks": "^3.0.9",
+    "tslint-config-standard": "^7.1.0"
+  }
+}

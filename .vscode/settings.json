@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "tmp/": true,
+    "cache/": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "editor.autoIndent": true,
+  "window.zoomLevel": 0
+}

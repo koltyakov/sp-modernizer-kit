@@ -1,0 +1,11 @@
+{
+  "$schema": "../node_modules/sp-build-tasks/schema/v1/sppp.json",
+  "spFolder": "_catalogs/masterpage/modernizer",
+  "distFolder": "./dist",
+  "webpackItemsMap": [
+    { "entry": "./src/scripts/modules/hubMenu/index.tsx", "target": "hubMenu.js" }
+  ],
+  "customActions": [
+    { "name": "Hub Site Menu", "scope": "site", "scriptSrc": "~publishroot/scripts/hubMenu.js" }
+  ]
+}
