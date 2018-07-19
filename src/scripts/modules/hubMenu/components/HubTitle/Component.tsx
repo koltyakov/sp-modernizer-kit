@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { IHubSiteTitleProps } from './Interfaces';
 
-import './Component.module.scss';
+import './Component.scss';
 
 class HubTitle extends React.Component<IHubSiteTitleProps> {
 

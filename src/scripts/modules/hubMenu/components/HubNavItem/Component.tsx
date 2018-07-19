@@ -5,7 +5,7 @@ import { DefaultButton, IButton } from 'office-ui-fabric-react/lib/Button';
 
 import { INavigationItem } from './Interfaces';
 
-import './Component.module.scss';
+import './Component.scss';
 
 class HubNavItem extends React.Component<INavigationItem> {
 

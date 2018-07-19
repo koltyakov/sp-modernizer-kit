@@ -1,0 +1,233 @@
+.o365cs-nav-header {
+  border-bottom: 1px solid #c8c8c8;
+}
+
+// a.ms-HubNav-nameLink.ms-HubNav-link {
+//   font-family: FabricMDL2Icons-1;
+// }
+
+// #hub-site-menu .ms-Button-label {
+//   font-size: 15px;
+//   border-bottom: 1px dotted #dadada;
+//   line-height: 24px;
+//   &:hover {
+//     color: #d23438;
+//     border-bottom: 1px dotted #d23438;
+//   }
+// }
+
+// #siteIcon {
+//   display: none;
+// }
+
+.o365cs-nav-contextMenu .o365cs-contextMenuItem, .o365cs-nav-contextMenu .o365cs-contextMenuInactiveItem {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#s4-titlerow {
+  margin-left: 206px;
+
+  padding-bottom: 25px;
+  padding-top: 25px;
+
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #eaeaea !important;
+}
+
+#titleAreaBox {
+  margin: auto 32px;
+}
+
+#contentRow {
+  padding-top: 0px;
+}
+
+#contentBox {
+  margin-left: 206px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-left: 1px solid;
+  border-color: #eaeaea !important;
+}
+
+#sideNavBox {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 206px !important;
+
+  top: 40px;
+  position: absolute;
+
+  border-top: 1px solid;
+  border-color: #eaeaea !important;
+}
+
+#DeltaPlaceHolderSearchArea {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  &.ms-mpSearchBox {
+    width: inherit;
+    min-width: 206px;
+  }
+  #searchInputBox {
+    margin-bottom: 0px;
+    float: left;
+    width: 100%;
+  }
+  .ms-srch-sb-border {
+    height: 40px;
+    border: none;
+  }
+  .ms-srch-sb {
+    width: 100%;
+    &.ms-srch-sb-borderFocused {
+      border: none;
+    }
+    > .ms-srch-sb-navLink, > .ms-srch-sb-searchLink {
+      height: 38px;
+      width: 38px;
+      position: absolute;
+      top: 0px;
+      > img {
+        display: none;
+      }
+      &:hover {
+        background-color: transparent;
+      }
+      text-decoration: none;
+
+      font-family: FabricMDL2Icons;
+      font-style: normal;
+      font-weight: 400;
+
+      font-size: 18px;
+      line-height: 40px;
+      text-align: center;
+    }
+    > .ms-srch-sb-navLink {
+      color: #ccc;
+      right: 0px;
+      &:before {
+        content: "\E70D";
+      }
+    }
+    > .ms-srch-sb-searchLink {
+      left: 0px;
+      &:before {
+        content: "\E721";
+      }
+    }
+    > input {
+      height: 40px;
+      margin-left: 0px;
+      padding-left: 43px !important;
+      padding-top: 0px !important;
+      font-size: 14px;
+      font-weight: 400;
+      width: 100% !important;
+      box-sizing: border-box;
+      border-collapse: collapse;
+      height: 42px;
+      margin-top: -1px;
+      &:active, &:focus {
+        width: 499px !important;
+        background-color: #fff;
+        border: 1px solid #eaeaea;
+      }
+    }
+    #NavDropdownListContainer {
+      width: 206px;
+      padding: 0px;
+      > .ms-qSuggest-list {
+        width: 100% !important;
+      }
+    }
+  }
+  .ms-srch-sb-navLink-menuOpen, .ms-srch-sb-navLink-menuOpen:hover {
+    background-color: transparent;
+  }
+}
+
+.ms-core-pageTitle {
+  font-size: inherit;
+}
+
+#DeltaPlaceHolderPageTitleInTitleArea {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 28px;
+  font-weight: 100;
+}
+
+#DeltaTopNavigation {
+  // position: absolute;
+  // top: 0px;
+  // left: 238px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  .ms-listMenu-editLink {
+    display: none;
+  }
+}
+
+#DeltaTopNavigation {
+  .ms-core-listMenu-selected {
+    font-weight: 400;
+  }
+  .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
+    margin-right: 20px;
+  }
+}
+
+#DeltaPlaceHolderLeftNavBar {
+  .ms-core-listMenu-root {
+    > li {
+      line-height: 30px;
+      > a, > span {
+        padding-left: 50px;
+      }
+      ul > li > a {
+        padding-left: 65px;
+      }
+    }
+    .ms-navedit-editSpan {
+      margin-left: 10px;
+      display: none;
+    }
+  }
+  a[onclick="GoToModern(true)"] {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  span.menu-item-text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .ms-core-sideNavBox-removeLeftMargin {
+    margin-top: 15px;
+  }
+
+  a.selected.menu-item {
+    margin-left: 21px;
+    border-left: 2px solid #253789; // ToDo: Get dynamically
+    padding-left: 27px;
+  }
+}
+
+.no-search-control {
+  #sideNavBox {
+    top: -1px;
+  }
+}
+
+// #globalNavBox {
+//   background-color: transparent;
+// }

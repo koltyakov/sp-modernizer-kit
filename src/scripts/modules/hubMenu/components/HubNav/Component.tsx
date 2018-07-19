@@ -5,7 +5,7 @@ import HubNavItem from '../HubNavItem';
 
 import { IHubSiteData } from './Interfaces';
 
-import './Component.module.scss';
+import './Component.scss';
 
 class HubNav extends React.Component<IHubSiteData> {
 

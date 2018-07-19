@@ -7,7 +7,7 @@ import { HubSiteApi, IHubSiteData } from './api';
 import { setupPnp } from '../../utils/odata';
 import { loadFonts } from '../../utils/fonts';
 
-import './styles.scss';
+import './styles/index.scss';
 
 const initHubSiteMenu = () => {
   setupPnp();
@@ -26,9 +26,9 @@ const renderMenu = (hubSiteData: IHubSiteData) => {
     const suiteBarEl: HTMLDivElement = document.getElementById('suiteBarTop') as HTMLDivElement;
     const hubMenuEl = document.createElement('div');
 
-    // Is current site is a hub site
-    if (hubSiteData.url === _spPageContextInfo.siteAbsoluteUrl) {
-      document.body.className += ' hub-site';
+    const isHubSite = hubSiteData.url === _spPageContextInfo.siteAbsoluteUrl;
+    if (isHubSite) {
+      document.body.className += ' is-hub-site';
     }
 
     hubMenuEl.id = 'hub-site-menu';

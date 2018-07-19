@@ -3,10 +3,12 @@
   "spFolder": "_catalogs/masterpage/modernizer",
   "distFolder": "./dist",
   "webpackItemsMap": [
-    { "entry": "./src/scripts/modules/hubMenu/index.tsx", "target": "hubMenu.js" }
+    { "entry": "./src/scripts/modules/hubMenu/index.tsx", "target": "hubMenu.js" },
+    { "entry": "./src/scripts/modules/modernizer/index.tsx", "target": "modernizer.js" }
   ],
   "customActions": [
-    { "name": "Hub Site Menu", "scope": "site", "scriptSrc": "~publishroot/scripts/hubMenu.js" }
+    { "name": "Hub Site Menu", "scope": "site", "scriptSrc": "~publishroot/scripts/hubMenu.js", "sequence": 100 },
+    { "name": "Medernizer Theme", "scope": "site", "scriptSrc": "~publishroot/scripts/modernizer.js", "sequence": 150 }
   ],
   "copyAssetsMap": [{
     "src": [ "./node_modules/@uifabric/icons/fonts" ],
