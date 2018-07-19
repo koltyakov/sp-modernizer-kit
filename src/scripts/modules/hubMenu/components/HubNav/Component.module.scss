@@ -1,0 +1,32 @@
+.ms-HubNav {
+  color: #333333;
+}
+
+.ms-HubNav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 8px 32px;
+  line-height: 24px;
+  background-color: #ffffff;
+  // border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  .ms-HorizontalNav {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  a, a:visited {
+    color: #666666;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.ms-HorizontalNav {
+  white-space: nowrap;
+}

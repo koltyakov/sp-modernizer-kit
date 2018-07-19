@@ -1,0 +1,99 @@
+[dir=ltr] .ms-HorizontalNavItem:not(:last-child) {
+  margin-right: 28px;
+}
+
+.ms-HorizontalNavItem {
+  display: inline-block;
+}
+
+.ms-HubNav .ms-HorizontalNavItem-link {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.ms-HorizontalNavItem-link {
+  background: 0 0;
+  cursor: pointer;
+  min-width: 20px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.ms-HorizontalNavItem-splitbutton {
+  padding: 0;
+  background: 0 0;
+  border-style: none;
+  //
+  line-height: 0px;
+  min-width: initial;
+  margin: 0;
+  &:hover {
+    background: transparent;
+  }
+  > i {
+    font-size: 13px;
+  }
+}
+
+[dir=ltr] .ms-HorizontalNav-chevronDown {
+  margin-left: 8px;
+}
+
+.ms-HorizontalNav-chevronDown {
+  display: inline;
+  vertical-align: middle;
+  line-height: 11px;
+}
+
+[dir=ltr] .ms-HorizontalNav-chevronDown {
+  margin-left: 8px;
+}
+
+.ms-HorizontalNav-chevronDown {
+  display: inline;
+  vertical-align: middle;
+  line-height: 11px;
+}
+
+//
+
+.ms-HorizontalNavItem {
+  .ms-Button.ms-HorizontalNavItem-link {
+    height: 24px;
+    border: none;
+    i.ms-Button-menuIcon {
+      margin-left: 8px;
+      margin-right: 0px;
+      font-size: 13px;
+      margin-top: 4px;
+    }
+  }
+  .ms-Button-label {
+    font-weight: inherit;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .ms-HorizontalNavItem-link:hover {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+.ms-HorizontalNav {
+  .ms-ContextualMenu-link:hover {
+    text-decoration: none;
+  }
+  .ms-ContextualMenu-itemText {
+    font-size: 12px;
+    font-weight: 400;
+    color: #666666;
+  }
+}

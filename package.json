@@ -4,7 +4,7 @@
   "description": "SharePoint Online classic sites modernizer kit",
   "private": true,
   "scripts": {
-    "build": "gulp build --prod --webpack",
+    "build": "gulp build --prod --copy-assets --webpack",
     "watch": "gulp watch",
     "config": "gulp config --init",
     "publish": "gulp push --diff",

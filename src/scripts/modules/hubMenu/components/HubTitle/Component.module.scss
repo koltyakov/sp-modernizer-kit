@@ -1,0 +1,25 @@
+[dir=ltr] .ms-HubNav-link {
+  margin-right: 20px;
+}
+
+.ms-HubNav-link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 0;
+  font-size: 14px;
+  font-weight: 400;
+  font-weight: 600;
+  color: #666666;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+html[dir=ltr] .ms-HubNav-logo {
+  margin-right: 8px;
+}
+
+.ms-HubNav-logo {
+  height: 24px;
+}

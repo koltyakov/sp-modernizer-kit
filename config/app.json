@@ -7,5 +7,9 @@
   ],
   "customActions": [
     { "name": "Hub Site Menu", "scope": "site", "scriptSrc": "~publishroot/scripts/hubMenu.js" }
-  ]
+  ],
+  "copyAssetsMap": [{
+    "src": [ "./node_modules/@uifabric/icons/fonts" ],
+    "dist": "./dist"
+  }]
 }
