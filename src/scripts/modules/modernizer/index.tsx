@@ -3,16 +3,13 @@ import './styles/index.scss';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import Branding from './components/Branding';
-
-import { loadFonts } from '../../utils/fonts';
+import { Branding } from './components/Branding';
 
 declare const HUB_SITE_URL: string;
 const hubSiteUrl = HUB_SITE_URL;
 
 const appendBranding = () => {
   const rootUri = `/${hubSiteUrl.split('/').slice(3).join('/')}`.replace(/\/\//g, '/');
-  loadFonts(rootUri);
 
   const noSearchControl = document.getElementById('DeltaPlaceHolderSearchArea').innerHTML.trim().length === 0;
   if (noSearchControl) {
@@ -25,7 +22,7 @@ const appendBranding = () => {
   portalBrandingEl.id = 'portal-branding';
   suiteBarEl.parentNode.insertBefore(portalBrandingEl, suiteBarEl.nextSibling);
 
-  ReactDOM.render(<Branding />, portalBrandingEl);
+  ReactDOM.render(<Branding siteRelativeUrl={rootUri} />, portalBrandingEl);
 };
 
 ExecuteOrDelayUntilBodyLoaded(appendBranding);

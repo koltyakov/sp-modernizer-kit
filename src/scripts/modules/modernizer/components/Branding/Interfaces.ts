@@ -1,1 +1,5 @@
-export interface IBrandingProps {}
+export interface IBrandingProps {
+  siteRelativeUrl: string;
+}
+
+export interface IBrandingState {}

@@ -20,9 +20,6 @@ const initHubSiteMenu = () => {
 const renderMenu = (hubSiteData: IHubSiteData) => {
   // console.log(hubSiteData);
   if (hubSiteData && hubSiteData.navigation) {
-    const rootUri = `/${hubSiteData.url.split('/').slice(3).join('/')}`.replace(/\/\//g, '/');
-    loadFonts(rootUri);
-
     const suiteBarEl: HTMLDivElement = document.getElementById('suiteBarTop') as HTMLDivElement;
     const hubMenuEl = document.createElement('div');
 
