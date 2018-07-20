@@ -8,7 +8,7 @@
   ],
   "customActions": [
     { "name": "Hub Site Menu", "scope": "site", "scriptSrc": "~publishroot/scripts/hubMenu.js", "sequence": 100 },
-    { "name": "Medernizer Theme", "scope": "site", "scriptSrc": "~publishroot/scripts/modernizer.js", "sequence": 150 }
+    { "name": "Modernizer Theme", "scope": "site", "scriptSrc": "~publishroot/scripts/modernizer.js", "sequence": 150 }
   ],
   "copyAssetsMap": [{
     "src": [ "./node_modules/@uifabric/icons/fonts" ],
