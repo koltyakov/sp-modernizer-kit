@@ -16,7 +16,8 @@
   },
   "keywords": [
     "SharePoint Online",
-    "SPO", "Modernizer"
+    "SPO",
+    "Modernizer"
   ],
   "author": "Andrew Koltyakov <andrew.koltyakov@gmail.com>",
   "license": "MIT",
@@ -37,7 +38,7 @@
     "@types/react-dom": "^16.0.6",
     "@types/sharepoint": "^2016.1.1",
     "eslint-config-standard": "^11.0.0",
-    "sp-build-tasks": "^3.0.9",
+    "sp-build-tasks": "^3.0.10",
     "tslint-config-standard": "^7.1.0"
   }
 }
