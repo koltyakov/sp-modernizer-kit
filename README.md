@@ -1,6 +1,6 @@
 # SharePoint Online classic sites modernizer kit
 
-**SharePoint Modernizer Kit** is an expandable set of solutions for Classic SharePoint which help in transition to Modern experience.
+**SharePoint Modernizer Kit** is an expandable set of solutions for Classic SharePoint which help in the transition to Modern experience.
 
 > _This is a draft version and some work is in progress_
 
@@ -8,13 +8,13 @@
 
 ### Hub site menu
 
-Adds modern hub site menu to classic sections of modern sites connected to a Hub Site including classic sub webs.
+Adds modern hub site menu to classic sections of modern sites connected to a Hub Site including classic subwebs.
 
 ![HubMenu](./docs/assets/hubsitemenu-01.png)
 
 ### Modernizer theme
 
-Transforms classic Seattle masterpage look and feel to modern experience.
+Transforms classic Seattle master page look and feel to the modern experience.
 
 ![Modernizer](./docs/assets/modernizer-01.png)
 
@@ -48,7 +48,7 @@ npm install
 npm run config
 ```
 
-Then provide SharePoint hub site url and credentials in wizard prompts.
+Then provide SharePoint hub site URL and credentials in wizard prompts.
 
 ### Build the project
 
