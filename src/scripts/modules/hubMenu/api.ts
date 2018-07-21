@@ -1,6 +1,7 @@
 import { SPHttpClient } from '@pnp/sp';
 
 import store from '../../utils/store';
+import { setupPnp } from '../../utils/odata';
 
 import { IHubSiteData } from './interfaces';
 export * from './interfaces';
@@ -10,6 +11,7 @@ export class HubSiteApi {
   private client: SPHttpClient;
 
   public constructor() {
+    setupPnp();
     this.client = new SPHttpClient();
   }
 

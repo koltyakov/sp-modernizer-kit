@@ -2,15 +2,12 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import HubNav from './components/HubNav';
-import { HubSiteApi, IHubSiteData } from './api';
-
-import { setupPnp } from '../../utils/odata';
-import { loadFonts } from '../../utils/fonts';
+import { IHubSiteData } from './interfaces';
 
 import './styles/index.scss';
 
-const initHubSiteMenu = () => {
-  setupPnp();
+const initHubSiteMenu = async () => {
+  const { HubSiteApi } = await import('./api');
   new HubSiteApi()
     .getHubSiteData()
     .then(renderMenu)
@@ -18,7 +15,6 @@ const initHubSiteMenu = () => {
 };
 
 const renderMenu = (hubSiteData: IHubSiteData) => {
-  // console.log(hubSiteData);
   if (hubSiteData && hubSiteData.navigation) {
     const suiteBarEl: HTMLDivElement = document.getElementById('suiteBarTop') as HTMLDivElement;
     const hubMenuEl = document.createElement('div');
