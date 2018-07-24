@@ -12,8 +12,18 @@ const defineOptions = {
 };
 
 configs.forEach(conf => {
+
+  // Add define plugin dynamic variables
   conf.plugins = conf.plugins || [];
   conf.plugins.push(new DefinePlugin(defineOptions));
+
+  // Exclude "heavy" 3rd parties
+  conf.externals = Object.assign(conf.externals || {}, {
+    '@pnp/sp': 'pnp',
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  });
+
 });
 
 module.exports = configs;

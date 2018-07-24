@@ -3,11 +3,11 @@ import * as ReactDOM from 'react-dom';
 
 import HubNav from './components/HubNav';
 import { IHubSiteData } from './interfaces';
+import { HubSiteApi } from './api';
 
 import './styles/index.scss';
 
 const initHubSiteMenu = async () => {
-  const { HubSiteApi } = await import('./api');
   new HubSiteApi()
     .getHubSiteData()
     .then(renderMenu)

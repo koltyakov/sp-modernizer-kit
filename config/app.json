@@ -7,8 +7,11 @@
     { "entry": "./src/scripts/modules/modernizer/index.tsx", "target": "modernizer.js" }
   ],
   "customActions": [
-    { "name": "Hub Site Menu", "scope": "site", "scriptSrc": "~publishroot/scripts/hubMenu.js", "sequence": 100 },
-    { "name": "Modernizer Theme", "scope": "site", "scriptSrc": "~publishroot/scripts/modernizer.js", "sequence": 150 }
+    { "name": "React", "scope": "site", "scriptSrc": "https://cdnjs.cloudflare.com/ajax/libs/react/16.4.1/umd/react.production.min.js", "sequence": 100 },
+    { "name": "ReactDOM", "scope": "site", "scriptSrc": "https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.1/umd/react-dom.production.min.js", "sequence": 110 },
+    { "name": "PnPjs", "scope": "site", "scriptSrc": "https://cdnjs.cloudflare.com/ajax/libs/pnp-pnpjs/1.1.2/pnpjs.es5.umd.bundle.min.js", "sequence": 120 },
+    { "name": "Hub Site Menu", "scope": "site", "scriptSrc": "~publishroot/scripts/hubMenu.js", "sequence": 200 },
+    { "name": "Modernizer Theme", "scope": "site", "scriptSrc": "~publishroot/scripts/modernizer.js", "sequence": 200 }
   ],
   "copyAssetsMap": [{
     "src": [ "./node_modules/@uifabric/icons/fonts" ],
