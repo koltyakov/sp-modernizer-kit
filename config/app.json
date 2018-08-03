@@ -3,15 +3,15 @@
   "spFolder": "_catalogs/masterpage/modernizer",
   "distFolder": "./dist",
   "webpackItemsMap": [
-    { "entry": "./src/scripts/modules/hubMenu/index.tsx", "target": "hubMenu.js" },
-    { "entry": "./src/scripts/modules/modernizer/index.tsx", "target": "modernizer.js" }
+    { "name": "Hub menu", "entry": "./src/scripts/modules/hubMenu/index.tsx", "target": "hubMenu.js", "includePolyfills": false },
+    { "name": "Modernizer styling", "entry": "./src/scripts/modules/modernizer/index.tsx", "target": "modernizer.js", "includePolyfills": false }
   ],
   "customActions": [
-    { "name": "React", "scope": "site", "scriptSrc": "https://cdnjs.cloudflare.com/ajax/libs/react/16.4.1/umd/react.production.min.js", "sequence": 100 },
-    { "name": "ReactDOM", "scope": "site", "scriptSrc": "https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.1/umd/react-dom.production.min.js", "sequence": 110 },
-    { "name": "PnPjs", "scope": "site", "scriptSrc": "https://cdnjs.cloudflare.com/ajax/libs/pnp-pnpjs/1.1.2/pnpjs.es5.umd.bundle.min.js", "sequence": 120 },
-    { "name": "Hub Site Menu", "scope": "site", "scriptSrc": "~publishroot/scripts/hubMenu.js", "sequence": 200 },
-    { "name": "Modernizer Theme", "scope": "site", "scriptSrc": "~publishroot/scripts/modernizer.js", "sequence": 200 }
+    { "name": "React", "scope": "site", "scriptSrc": "https://cdnjs.cloudflare.com/ajax/libs/react/16.4.1/umd/react.production.min.js", "sequence": 100, "namespace": "react.js" },
+    { "name": "ReactDOM", "scope": "site", "scriptSrc": "https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.1/umd/react-dom.production.min.js", "sequence": 110, "namespace": "react-dom.js", "dependencies": ["react.js"] },
+    { "name": "PnPjs", "scope": "site", "scriptSrc": "https://cdnjs.cloudflare.com/ajax/libs/pnp-pnpjs/1.1.2/pnpjs.es5.umd.bundle.min.js", "sequence": 120, "namespace": "pnp.js" },
+    { "name": "Hub Site Menu", "scope": "site", "scriptSrc": "~publishroot/scripts/hubMenu.js", "sequence": 200, "namespace": "hubMenu.js", "dependencies": ["react.js", "react-dom.js", "pnp.js"] },
+    { "name": "Modernizer Theme", "scope": "site", "scriptSrc": "~publishroot/scripts/modernizer.js", "sequence": 200, "namespace": "modernizer.js", "dependencies": ["react.js", "react-dom.js", "pnp.js"] }
   ],
   "copyAssetsMap": [{
     "src": [ "./node_modules/@uifabric/icons/fonts" ],
