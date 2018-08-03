@@ -11,14 +11,14 @@ const defineOptions = {
   HUB_SITE_URL: `"${require(path.join(process.cwd(), process.env.PRIVATE_JSON || './config/private.json')).siteUrl}"`
 };
 
-configs.forEach(conf => {
+configs.forEach(config => {
 
   // Add define plugin dynamic variables
-  conf.plugins = conf.plugins || [];
-  conf.plugins.push(new DefinePlugin(defineOptions));
+  config.plugins = config.plugins || [];
+  config.plugins.push(new DefinePlugin(defineOptions));
 
   // Exclude "heavy" 3rd parties
-  conf.externals = Object.assign(conf.externals || {}, {
+  config.externals = Object.assign(config.externals || {}, {
     '@pnp/sp': 'pnp',
     'react': 'React',
     'react-dom': 'ReactDOM'
